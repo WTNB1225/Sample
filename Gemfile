@@ -34,4 +34,8 @@ group :test do
   gem "minitest-reporters",       "1.6.0"
   gem "guard",                    "2.18.0"
   gem "guard-minitest",           "2.4.6"
+
+group :production do
+  gem "pg", "1.3.5"
+end
 end
