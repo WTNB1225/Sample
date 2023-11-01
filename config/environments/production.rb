@@ -67,7 +67,7 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :smpt
   host = 'https://rails-u6r2.onrender.com'
   config.action_mailer.default_url_options = {host:host}
-  ActionMailer::Base.smpt_settings = {
+  ActionMailer::Base.smtp_settings = {
     :port => 587,
     :address => 'smtp.mailgun.org',
     :user_name => ENV['MAILGUN_SMTP_LOGIN'],
