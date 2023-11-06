@@ -28,7 +28,6 @@ end
 group :development do
   gem "web-console", "4.2.0"
   gem "solargraph",  "0.48.0"
-  gem "aws-sdk-s3", "1.114.0", require: false
 end
 
 group :test do
@@ -43,5 +42,6 @@ group :test do
 
 group :production do
   gem "pg", "1.3.5"
+  gem "aws-sdk-s3", "1.114.0", require: false
 end
 end
